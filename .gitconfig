@@ -1,0 +1,34 @@
+[user]
+	email = widlund@spotify.com
+	name = Sebastian Widlund
+[color]
+	ui = true
+[alias]
+	st = status
+	br = branch
+	co = checkout
+	ci = commit
+	cim = commit --amend
+	unstage = reset HEAD --
+	cm = checkout master
+	cs = checkout stable
+	mm = merge master
+	rfm = push origin HEAD:refs/for/master
+	cw = checkout dev/widlund
+	reb = rebase master
+	s = stash
+	sp = stash pop
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	ap = add -p
+
+[branch]
+	autosetupmerge = true
+	autosetuprebase = always
+[help]
+	autocorrect = 1
+[init]
+	templatedir = ~/.git_template
+[core]
+	editor = emacs
+[grep]
+	extendRegexp = true
